@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/luischdu/Block-Master/static/css/main.db6e767c.chunk.css",
+    "main.js": "/luischdu/Block-Master/static/js/main.d5f0fab7.chunk.js",
+    "main.js.map": "/luischdu/Block-Master/static/js/main.d5f0fab7.chunk.js.map",
+    "runtime-main.js": "/luischdu/Block-Master/static/js/runtime-main.24db4924.js",
+    "runtime-main.js.map": "/luischdu/Block-Master/static/js/runtime-main.24db4924.js.map",
+    "static/js/2.178dbfa8.chunk.js": "/luischdu/Block-Master/static/js/2.178dbfa8.chunk.js",
+    "static/js/2.178dbfa8.chunk.js.map": "/luischdu/Block-Master/static/js/2.178dbfa8.chunk.js.map",
+    "index.html": "/luischdu/Block-Master/index.html",
+    "static/css/main.db6e767c.chunk.css.map": "/luischdu/Block-Master/static/css/main.db6e767c.chunk.css.map",
+    "static/js/2.178dbfa8.chunk.js.LICENSE.txt": "/luischdu/Block-Master/static/js/2.178dbfa8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24db4924.js",
+    "static/js/2.178dbfa8.chunk.js",
+    "static/css/main.db6e767c.chunk.css",
+    "static/js/main.d5f0fab7.chunk.js"
+  ]
+}
