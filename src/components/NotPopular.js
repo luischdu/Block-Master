@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import VerPeliculas from "../pages/VerPeliculas";
-import { movieListNotPopular } from "../action/movie";
+import { movieListNotPopular, watchListLater } from "../action/movie";
 import { setCredential } from "../action/trailer";
 
 const NotPopular = () => {
@@ -89,6 +89,21 @@ const NotPopular = () => {
   const keyVid = useSelector((state) => state.trailer.trailer);
   console.log(keyVid);
 
+  const displayname = useSelector((state) => state.auth.name);
+
+  const handleClicLater = () => {
+    let datos = [
+      {
+        id: targetId.id,
+        url: `https://image.tmdb.org/t/p/w185${targetId.poster_path}`,
+        title: targetId.title,
+        raiting: targetId.vote_average,
+        trailer: `https://api.themoviedb.org/3/movie/${targetId}/videos?api_key=ed4ef444cf09035de37c391527885e55&language=en`,
+      },
+    ];
+    dispatch(watchListLater(datos, displayname));
+  };
+
   return (
     <div>
       {isLoading ? (
@@ -105,6 +120,7 @@ const NotPopular = () => {
           handleClic={handleClic}
           keyVid={keyVid}
           setElement={setElement}
+          handleClicLater={handleClicLater}
         />
       )}
     </div>

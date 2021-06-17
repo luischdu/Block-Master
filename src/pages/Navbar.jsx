@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { movieSearch } from "../action/movie";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import styled from 'styled-components'
@@ -14,13 +14,6 @@ border-radius: 7px;
 
 const Navbar = ({ isLoggedIn }) => {
 
-  const [search, setSearch] = useState("");
-  const dispatch = useDispatch;
-  const handleSearch = (e) => {
-    console.log(e.target.value);
-    setSearch(e.target.value);
-  };
-  dispatch(movieSearch(search));
   const userPhoto = useSelector((state) => state.auth.photoURL);
   return (
     <div className="">
@@ -104,11 +97,13 @@ const Navbar = ({ isLoggedIn }) => {
                 type="search"
                 placeholder="Buscar"
                 aria-label="Search"
-                onChange={handleSearch}
+               
               />
-              <button className="btn btn-warning" type="submit">
-                Buscar
-              </button>
+              <Link to='/search'>
+                <button className="btn btn-warning" type="submit">
+                  Buscar
+                </button>
+              </Link>
 
             </form>
           </div>

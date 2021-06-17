@@ -4,7 +4,10 @@ const initialState ={
   hmovie: [],
   popular: [],
   npopular: [],
-  search : null
+  later:[],
+  search : [],
+  valueSearch: ""
+
 }
 
 export const movieReducer = (state = initialState, action) => {
@@ -24,13 +27,30 @@ export const movieReducer = (state = initialState, action) => {
         ...state,
         npopular: action.payload.movieNotPopular,
       };
+    case types.movieLater:
+      return {
+        ...state,
+        later: action.payload.later,
+      };
+    case types.movieDelete:
+      return {
+        ...state,
+        later: action.payload.later,
+      };
 
 
     case types.movieSearch:
       return {
         ...state,
-        search: action.payload,
+        search: action.payload.search,
       };
+
+    case types.movieValueSearch:
+      return {
+        valueSearch: action.payload.valueSearch,
+      };
+
+
     default:
       return state;
   }

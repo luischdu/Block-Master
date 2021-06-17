@@ -34,7 +34,7 @@ const StarIcon = styled.div`
   color: #fed941;
 `;
 
-const VerPeliculas = ({ handleClic, targetId, isLoading, setElement, list, keyVid }) => {
+const VerPeliculas = ({ handleClic, targetId, isLoading, setElement, list, keyVid, handleClicLater }) => {
     return (
         <div className="container">
             <div
@@ -43,9 +43,9 @@ const VerPeliculas = ({ handleClic, targetId, isLoading, setElement, list, keyVi
                 tabIndex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
-
+                style={{ backgroundColor: "#13131396" }}
             >
-                <div className="modal-dialog modal-lg modal-dialog-centered" style={{ backgroundColor: "#13131316" }}>
+                <div className="modal-dialog modal-lg modal-dialog-centered" >
                     <div className="modal-content bg-transparent border-0">
                         <div className="modal-header border-bottom-0">
                             <h5 className="modal-title text-warning " id="exampleModalLabel">
@@ -78,7 +78,7 @@ const VerPeliculas = ({ handleClic, targetId, isLoading, setElement, list, keyVi
                         </div>
                         <div className="modal-footer border-top-0">
                             <button className="btn btn-lg btn-warning" data-bs-toggle="modal" data-bs-target="#videoModal" >VER AHORA</button>
-                            <button className="btn btn-lg btn-outline-warning bg-dark">
+                            <button onClick={handleClicLater} className="btn btn-lg btn-outline-warning bg-dark">
                                 VER DESPUES
                             </button>
                         </div>
@@ -89,7 +89,7 @@ const VerPeliculas = ({ handleClic, targetId, isLoading, setElement, list, keyVi
 
             {/* video modal
  */}
-            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
                 <div class="modal-dialog" style={{ backgroundColor: "#13131316" }}>
                     <div class="modal-content">
                         <div class="modal-header">
