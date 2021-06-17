@@ -3,7 +3,7 @@
 ## <img width=30px src='https://i.imgur.com/F2ZlOa6.png'> Block Master
 
 
-Nada commo una buena pelicula para compartir con los tuyos :energy: :smile:  :sparkles:
+🎦 Nada commo una buena pelicula para compartir con los tuyos 🎥 😄 🎇
 
 
 Puedes ver el proyecto [aquí](https://luischdu.github.io/Block-Master)
@@ -42,11 +42,12 @@ npm start
 ## 🔍 Vista
 
 ### 💻 Desktop
-A continuación se presenta la vista de carga en un dispositivo mobile
+A continuación se presenta la vista de carga en un dispositivo escritorio
 <br></br>
 <img src='https://i.imgur.com/HyYMNik.png' alt='carga-app' width=70%>
 
 ### 📱 Mobile
+A continuación se presenta la vista de carga en un dispositivo mobile
 <br></br>
 <img src='https://i.imgur.com/xJMVzXE.png' alt='main-page' width=20%>
 
