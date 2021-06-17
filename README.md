@@ -17,12 +17,12 @@ Debes contar en tu pc con `NPM` y `Node.js` para instalarlos ingresa [aquí](htt
 Para clonar este repositorio realiza el siguiente comando:
 
 ```bash
-$ git clone https://github.com/luischdu/SprintII.git Guappjalotas
+$ git clone https://github.com/luischdu/Block-Master.git BlockMaster
 ```
 ingresa a la carpeta donde se clono el repositorio
 
 ```bash
-$ cd Guappjalotas
+$ cd BlockMaster
 ```
 
 ## 🔥 Instalación de dependencias
